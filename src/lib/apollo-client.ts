@@ -3,8 +3,10 @@ import { setContext } from '@apollo/client/link/context';
 import { onError } from '@apollo/client/link/error';
 import config from '../../env.config.js';
 
-// URL del backend GraphQL desde configuración
-const GRAPHQL_URL = config.GRAPHQL_URL;
+// URL del backend GraphQL desde configuración o environment variable
+const GRAPHQL_URL = process.env.NEXT_PUBLIC_GRAPHQL_URL || config.GRAPHQL_URL;
+
+console.log('🔗 GraphQL URL configurado:', GRAPHQL_URL);
 
 // Link HTTP para conectar con el servidor GraphQL
 const httpLink = createHttpLink({

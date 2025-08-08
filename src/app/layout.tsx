@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ay Wey - Menú",
-  description: "Menú del restaurante Ay Wey",
+  title: "Mazorca - Menú",
+  description: "Menú del restaurante Mazorca",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
             <CartProvider>
               <header className="fixed top-0 left-0 w-full z-50 bg-black/95 border-b border-zinc-900 flex items-center justify-between px-6 py-2 shadow-xl">
                 <Link href="/" className="flex items-center gap-2">
-                  <div className="text-2xl font-bold text-yellow-400">🍽️ Ay Wey</div>
+                  <div className="text-2xl font-bold text-yellow-400">🌽 Mazorca</div>
                 </Link>
                 <div className="flex items-center gap-4">
                   <Link href="/admin/orders">
